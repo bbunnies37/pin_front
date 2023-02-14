@@ -6,8 +6,10 @@ module.exports = {
   ],
   theme: {
     extend: {
-      primary: '#BD081C',
-      secondary: '#EFEFEF',
+      colors: {
+        primary: '#BD081C',
+        secondary: '#EFEFEF',
+      }
     },
     fontFamily: {
       'sans': ['Helvetica', 'Arial', 'sans-serif'],

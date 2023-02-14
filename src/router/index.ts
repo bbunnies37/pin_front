@@ -10,7 +10,12 @@ const router = createRouter({
       // this generates a separate chunk (landing.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/Landing.vue')
-    }
+    },
+    {
+      path: '/pin-builder',
+      name: 'createPin',
+      component: () => import('../views/CreatePin.vue')
+    },
   ]
 })
 
