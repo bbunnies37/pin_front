@@ -5,12 +5,11 @@ module.exports = {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    colors: {
-      primary: '#BD081C',
-      secondary: '#EFEFEF',
-      gray: '#808080',
-    },
     extend: {
+      colors: {
+        primary: '#BD081C',
+        secondary: '#EFEFEF',
+      },
     },
     fontFamily: {
       'sans': ['Helvetica', 'Arial', 'sans-serif'],
