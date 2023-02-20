@@ -19,6 +19,11 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('src/views/PinDetail.vue')
     },
+    {
+      path: '/pin-builder',
+      name: 'createPin',
+      component: () => import('../views/CreatePin.vue')
+    },
   ]
 })
 

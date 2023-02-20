@@ -9,11 +9,11 @@ module.exports = {
       colors: {
         primary: '#BD081C',
         secondary: '#EFEFEF',
-      },
+      }
     },
     fontFamily: {
       'sans': ['Helvetica', 'Arial', 'sans-serif'],
-    }
+    },
   },
   plugins: [],
 }
