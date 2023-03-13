@@ -1,9 +1,9 @@
 <template>
-  <div class="relative w-[256px] px-[8px] pb-[16px] rounded-lg">
-    <div class="opacity-0 hover:opacity-100 w-100 hover:bg-gray-500 absolute inset-0 rounded-lg flex justify-between flex-col p-[15px]">
+  <div class="relative w-[256px] mx-[8px] mb-[16px] rounded-lg">
+    <div class="opacity-0 hover:opacity-100 w-100 hover:bg-black/50 absolute inset-0 rounded-lg flex justify-between flex-col p-[15px]">
       <div class="text-[#FFFFFF] flex justify-between">
-        <div>profile</div>  
-        <button class="bg-primary p-[10px] rounded-3xl">save</button>
+        <div>Profile ∨</div>
+        <button class="bg-primary p-[10px] rounded-3xl">Save</button>
       </div>
       <div class="font-bold text-xs flex justify-between">
         <button class="bg-secondary px-[10px] rounded-3xl">↗chaeWon.com</button>

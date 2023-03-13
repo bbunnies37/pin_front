@@ -6,6 +6,7 @@
         <div class="text-primary text-xl font-medium ml-1 tracking-[-1px]">Pinterest</div>
       </div>
       <div class="flex items-center">
+        <router-link to="/home">Home</router-link>
         <div class="mr-6">
           <router-link to="/pin-builder">create pin</router-link>
         </div>

@@ -11,8 +11,16 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('src/views/Landing.vue')
     },
+        {
+      path: '/home',
+      name: 'home',
+      // route level code-splitting
+      // this generates a separate chunk (landing.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('src/views/Home.vue')
+    },
     {
-      path: '/pinDetail',
+      path: '/pin-detail',
       name: 'pinDetail',
       // route level code-splitting
       // this generates a separate chunk (landing.[hash].js) for this route
