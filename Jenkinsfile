@@ -1,7 +1,7 @@
 node {
-  git poll: true, url:'https://github.com/bbunnies37/pin_front.git'
+  git poll: true, url:'https://github.com/bbunnies37/pin_front.git/main'
     stage('Pull') {
-      git 'https://github.com/bbunnies37/pin_front.git'
+      git 'https://github.com/bbunnies37/pin_front.git/main'
     }
     stage('Unit Test') {}
     stage('Build') {
