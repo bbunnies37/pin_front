@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Pull') {
       git branch : 'main',
-          url : 'https://github.com/bbunnies37/pin_front.git',
+          url : 'https://github.com/bbunnies37/pin_front.git'
           
     }
     stage('Build') {
