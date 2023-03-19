@@ -9,7 +9,7 @@ pipeline {
       sh(script: 'sudo docker build -t vuejs .')
     }
     stage('Deploy') {
-      sh(script: ' sudo docker run -it -p 3000:3000 --rm --name my-vue --network my-net vuejs') 
+      sh(script: ' sudo docker run -d -it -p 3000:3000 --rm --name my-vue --network my-net vuejs') 
     }
   }
 }
