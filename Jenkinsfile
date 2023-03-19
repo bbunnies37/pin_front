@@ -1,14 +1,14 @@
-node {
+pipeline {
+  agent any
     stage('Pull') {
       git branch : 'main',
           url 'https://github.com/bbunnies37/pin_front.git'
     }
-    stage('Unit Test') {}
     stage('Build') {
-      sh(script: 'docker-compose build app')
+      sh(script: 'sudo docker build -t vuejs .')
     }
     stage('Deploy') {
-      sh(script: 'docker-compose up -d production') 
+      sh(script: ' sudo docker run -it -p 3000:3000 --rm --name my-vue --network my-net vuejs') 
     }
    
 }
