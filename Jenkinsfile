@@ -1,5 +1,6 @@
 pipeline {
   agent any
+  stages {
     stage('Pull') {
       git branch : 'main',
           url 'https://github.com/bbunnies37/pin_front.git'
@@ -10,5 +11,5 @@ pipeline {
     stage('Deploy') {
       sh(script: ' sudo docker run -it -p 3000:3000 --rm --name my-vue --network my-net vuejs') 
     }
-   
+  }
 }
