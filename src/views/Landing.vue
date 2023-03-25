@@ -1,6 +1,8 @@
 <template>
-  <div class="bg-slate-300">
-    <h1>landing page</h1>
+  <div class="h-full flex justify-center items-center">
+    <div class="text-6xl font-semibold">
+      Get your next idea
+    </div>
   </div>
 </template>
 
