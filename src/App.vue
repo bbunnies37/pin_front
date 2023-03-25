@@ -11,7 +11,7 @@
           <router-link to="/pin-builder">create pin</router-link>
         </div>
         <div class="mr-2">
-          <button class="px-3 py-2 bg-primary text-white rounded-3xl">
+          <button class="px-3 py-2 bg-primary text-white rounded-3xl" @click="clickLogin">
             Log in
           </button>
         </div>
@@ -24,7 +24,8 @@
     </div>
     <router-view></router-view>
 
-    <Signup v-if="showSignup"></Signup>
+    <Signup v-if="showSignup" @go-login="clickLogin" @close-popup="clickSignup"></Signup>
+    <Login v-if="showLogin" @go-signup="clickSignup" @close-popup="clickLogin"></Login>
   </div>
 </template>
 
@@ -33,10 +34,16 @@ import { ref } from 'vue'
 import { RouterLink, RouterView } from 'vue-router'
 
 import Signup from 'src/components/Signup.vue'
+import Login from 'src/components/Login.vue'
 
 const showSignup = ref(false)
+const showLogin = ref(false)
 
 const clickSignup = () => {
   showSignup.value = !showSignup.value
+}
+
+const clickLogin = () => {
+  showLogin.value = !showLogin.value
 }
 </script>
