@@ -32,6 +32,11 @@ const router = createRouter({
       name: 'createPin',
       component: () => import('../views/CreatePin.vue')
     },
+    {
+      path: '/settings',
+      name: 'settings',
+      component: () => import('../views/Settings.vue')
+    },
   ]
 })
 
