@@ -14,6 +14,7 @@ pipeline {
     }
     stage('Deploy') {
         steps {
+      sh 'docker stop my-vue'
       sh 'docker run -d -it -p 3000:3000 --rm --name my-vue vuejs'
         }
     }
