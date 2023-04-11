@@ -18,7 +18,7 @@
                   :alt="images[props.idx % 4]">
               </div>
             </div>
-            <div class="h-full w-[508px] pt-[32px]">
+            <div class="h-auto w-[508px] pt-[32px] relative">
               <div class="px-[32px] w-full h-full">
                 <div class="flex justify-between">
                   <div class="flex justify-between">
@@ -55,11 +55,18 @@
                     </div>
                     <button class="text-[#000000] bg-secondary p-[10px] rounded-3xl">follow</button>
                   </div>
-                  <div>
-                    <div class="flex justify-start items-center">
-                      1 Comment <button class="w-[40px] h-[40px] rounded-full flex justify-center items-center"><img
-                          class="w-[18px] h-[18px]" src="src/assets/images/arrow_down.png"
-                          alt="arrow down images"></button>
+                  <div class="mb-[88px]">
+                    <div class="w-auto">
+                      <div class="flex items-center">
+                        2 Comment <button class="w-[40px] h-[40px] rounded-full flex justify-center items-center"><img
+                            class="w-[18px] h-[18px]" src="src/assets/images/arrow_down.png"
+                            alt="arrow down images"></button>
+                      </div>
+                      <div class="overflow-y-auto">
+                        <Comment />
+                        <Comment />
+                        <Comment />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -76,6 +83,7 @@
 
 <script setup lang="ts">
 import CommentInput from 'src/components/CommentInput.vue'
+import Comment from 'src/components/Comment.vue'
 const images = ['angryChae.jpg', 'cuteChae.jpg', 'kawaiiChae.jpg', 'merongChae.jpg']
 const props = defineProps({
   idx: {
