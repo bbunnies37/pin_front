@@ -1,6 +1,6 @@
 <template>
-  <div class="px-[24px] py-[32px] w-full">
-    <div class="flex w-full items-center  justify-around">
+  <div class="px-[24px] py-[32px] w-full absolute bottom-0">
+    <div class="w-full flex items-center  justify-around">
       <div>
         <img class="w-[48px] h-[48px] rounded-full" src="src/assets/images/cuteChae.jpg" alt="profile  images">
       </div>
