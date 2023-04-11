@@ -8,7 +8,7 @@
             <div>
               공개 프로필
             </div>
-            <div class="mt-2 h-[3px] bg-black"></div>
+            <div class="mt-2 h-[3px]" :class="{ 'bg-black': tabName === 'publicProfile' }"></div>
           </div>
         </a>
       </div>
@@ -18,7 +18,7 @@
             <div>
               홈피드 조정
             </div>
-            <div class="mt-2 h-[3px] bg-black"></div>
+            <div class="mt-2 h-[3px]" :class="{ 'bg-black': tabName === 'homeFeed' }"></div>
           </div>
         </a>
       </div>
@@ -100,22 +100,34 @@
           <div class="flex">
             <div class="mx-2">
               <div class="py-3">
-                <div class="p-2 font-semibold rounded-lg hover:bg-secondary cursor-pointer" @click="openSubTab('interests')">
+                <div 
+                  class="p-2 font-semibold rounded-lg hover:bg-secondary cursor-pointer"
+                  @click="openSubTab('interests')"
+                >
                   관심사
+                  <div class="mt-2 h-[3px]" :class="{ 'bg-black': subTabName === 'interests' }"></div>
                 </div>
               </div>
             </div>
             <div class="mx-2">
               <div class="py-3">
-                <div class="p-2 font-semibold rounded-lg hover:bg-secondary cursor-pointer" @click="openSubTab('boards')">
+                <div 
+                  class="p-2 font-semibold rounded-lg hover:bg-secondary cursor-pointer"
+                  @click="openSubTab('boards')"
+                >
                   보드
+                  <div class="mt-2 h-[3px]" :class="{ 'bg-black': subTabName === 'boards' }"></div>
                 </div>
               </div>
             </div>
             <div class="mx-2">
               <div class="py-3">
-                <div class="p-2 font-semibold rounded-lg hover:bg-secondary cursor-pointer" @click="openSubTab('following')">
+                <div 
+                  class="p-2 font-semibold rounded-lg hover:bg-secondary cursor-pointer"
+                  @click="openSubTab('following')"
+                >
                   팔로잉
+                  <div class="mt-2 h-[3px]" :class="{ 'bg-black': subTabName === 'following' }"></div>
                 </div>
               </div>
             </div>
@@ -153,7 +165,7 @@
 <script setup lang="ts">
   import { ref, onMounted } from 'vue'
 
-  const tab = ref('tab1')
+  const tabName = ref('publicProfile')
 
   const openTab = (menu: string) => {
     // Get all elements with class="tabcontent" and hide them
@@ -163,8 +175,13 @@
     }
 
     const tab = document.getElementById(menu)
-    if (tab) tab.style.display = 'block'
+    if (tab) {
+      tab.style.display = 'block'
+      tabName.value = menu
+    }
   }
+
+  const subTabName = ref('interests')
 
   const openSubTab = (menu: string) => {
     // Get all elements with class="sub-tab-content" and hide them
@@ -174,7 +191,10 @@
     }
 
     const subTab = document.getElementById(menu)
-    if (subTab) subTab.style.display = 'block'
+    if (subTab) {
+      subTab.style.display = 'block'
+      subTabName.value = menu
+    }
   }
 
   onMounted(() => {
