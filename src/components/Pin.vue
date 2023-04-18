@@ -9,10 +9,10 @@
         <button class="bg-secondary px-[10px] rounded-3xl">↗chaeWon.com</button>
         <div>
           <button class="mr-[10px] p-[5px] bg-secondary rounded-3xl">
-            <img class="w-[18px]" src="src/assets/images/download.png" alt="download images">
+            <img class="w-[18px]" src="../assets/images/download.png" alt="download images">
           </button>
           <button class="p-[5px] bg-secondary rounded-3xl">
-            <img class="w-[18px]" src="src/assets/images/more.png" alt="more options">
+            <img class="w-[18px]" src="../assets/images/more.png" alt="more options">
           </button>
         </div>
       </div>
