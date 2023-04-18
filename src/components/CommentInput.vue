@@ -2,7 +2,7 @@
   <div class="px-[24px] py-[32px] w-full sticky bottom-0 z-[1] border-t-2 bg-white">
     <div class="w-full flex items-center  justify-around">
       <div>
-        <img class="w-[48px] h-[48px] rounded-full" src="src/assets/images/cuteChae.jpg" alt="profile  images">
+        <img class="w-[48px] h-[48px] rounded-full" src="../assets/images/cuteChae.jpg" alt="profile  images">
       </div>
       <div class="flex relative w-10/12">
         <input type="text" name="text"

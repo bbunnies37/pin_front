@@ -7,7 +7,7 @@
 </template>
 
 <script setup>
-import Pin from 'src/components/Pin.vue'
+import Pin from '../components/Pin.vue'
 // import router from 'vue-router'
 
 const goPinDetail = () => {
