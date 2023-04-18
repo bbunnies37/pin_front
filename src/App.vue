@@ -1,7 +1,7 @@
 <template>
   <div class="h-screen relative">
     <!-- navigation bar -->
-    <div class="h-20 w-full p-4 flex justify-between sticky top-0 left-0 bg-white">
+    <div class="z-[1] h-20 w-full p-4 flex justify-between sticky top-0 left-0 bg-white">
       <div class="flex py-3 items-center">
         <img class="w-8 h-8" src="./assets/images/pinterest-logo.png" alt="pinterest logo">
         <div class="text-primary text-xl font-medium ml-1 tracking-[-1px]">Pinterest</div>
