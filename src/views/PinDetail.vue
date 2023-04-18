@@ -2,7 +2,7 @@
   <div class="flex justify-center">
     <div
       class="z-[1] rounded-full z-[4] fixed left-0 mt-[16px] bg-white/[.7] justify-center flex items-center w-[48px] h-[48px]">
-      <img class=" w-[20px] h-[20px]" src="src/assets/images/back_arrow.png" alt="뒤로가기 버튼">
+      <img class=" w-[20px] h-[20px]" src="../assets/images/back_arrow.png" alt="뒤로가기 버튼">
     </div>
     <div class="pt-[10px] w-full h-full max-w-[1016px] flex-auto shadow-lg">
         <div class="flex rounded-[32px] justify-center">
@@ -22,18 +22,18 @@
               <div class="flex justify-between sticky top-[-32px] w-full bg-white z-[2] px-[32px] ">
                 <div class="flex justify-between ">
                   <div class="w-[48px] h-[48px] flex justify-center items-center">
-                    <img class="w-[20px] h-[20px]" src="src/assets/images/more.png" alt="more images">
+                    <img class="w-[20px] h-[20px]" src="../assets/images/more.png" alt="more images">
                   </div>
                   <div class="w-[48px] h-[48px] flex justify-center items-center">
-                    <img class="w-[20px] h-[20px]" src="src/assets/images/download.png" alt="download images">
+                    <img class="w-[20px] h-[20px]" src="../assets/images/download.png" alt="download images">
                   </div>
                   <div class="w-[48px] h-[48px] flex justify-center items-center">
-                    <img class="w-[20px] h-[20px]" src="src/assets/images/copyLink.jpg" alt="copy link images">
+                    <img class="w-[20px] h-[20px]" src="../assets/images/copyLink.jpg" alt="copy link images">
                   </div>
                 </div>
                 <div class="flex justify-between items-center ">
                   <div class="px-[16px] flex justify-center items-center">Profile <img
-                      class="ml-[4px] w-[12px] h-[12px]" src="src/assets/images/arrow_down.png" alt="arrow down images">
+                      class="ml-[4px] w-[12px] h-[12px]" src="../assets/images/arrow_down.png" alt="arrow down images">
                   </div>
                   <button class="text-[#FFFFFF] bg-primary p-[10px] rounded-3xl">Save</button>
                 </div>
@@ -47,7 +47,7 @@
                   <div class="flex justify-between items-center">
                     <div class="flex">
                       <div class="rounded-full w-[48px] h-[48px]"><img class="px-[4px] rounded-full w-[48px] h-[48px]"
-                          src="src/assets/images/kawaiiChae.jpg" alt="귀여운채원이프로필사진"></div>
+                          src="../assets/images/kawaiiChae.jpg" alt="귀여운채원이프로필사진"></div>
                       <div class="text-[14px]">
                         <div>채원</div>
                         <div>2.1k followers</div>
@@ -59,7 +59,7 @@
                     <div class="w-auto">
                       <div class="flex items-center">
                         5 Comments <button class="w-[40px] h-[40px] rounded-full flex justify-center items-center"><img
-                            class="w-[18px] h-[18px]" src="src/assets/images/arrow_down.png"
+                            class="w-[18px] h-[18px]" src="../assets/images/arrow_down.png"
                             alt="arrow down images"></button>
                       </div>
                       <div>
@@ -77,8 +77,8 @@
 </template>
 
 <script setup lang="ts">
-import CommentInput from 'src/components/CommentInput.vue'
-import Comment from 'src/components/Comment.vue'
+import CommentInput from '../components/CommentInput.vue'
+import Comment from '../components/Comment.vue'
 const images = ['angryChae.jpg', 'cuteChae.jpg', 'kawaiiChae.jpg', 'merongChae.jpg']
 const props = defineProps({
   idx: {
