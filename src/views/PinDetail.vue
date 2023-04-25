@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center">
+  <div class="flex justify-center flex-wrap">
     <div
       class="z-[1] rounded-full z-[4] fixed left-0 mt-[16px] bg-white/[.7] justify-center flex items-center w-[48px] h-[48px]">
       <img class=" w-[20px] h-[20px]" src="../assets/images/back_arrow.png" alt="뒤로가기 버튼">
@@ -18,7 +18,7 @@
                     :alt="images[props.idx % 4]">
               </div>
             </div>
-            <div class="w-[508px] pt-[32px] relative overflow-auto">
+            <div class="w-[508px] pt-[32px] relative overflow-auto overflow-x-hidden">
               <div class="flex justify-between sticky top-[-32px] w-full bg-white z-[2] px-[32px] ">
                 <div class="flex justify-between ">
                   <div class="w-[48px] h-[48px] flex justify-center items-center">
@@ -73,12 +73,20 @@
             </div>
           </div>
         </div>
+        <div class="text-center px-[12px] py-[32px] w-full font-bold">More like this</div>
+        <div class="w-100 flex justify-center flex-wrap">
+      <div class="flex flex-wrap flex-col content-center h-[2917px] w-[1260px] relative">
+        <Pin v-for="i in 30" :key="i" :idx="i" />
+      </div>
+    </div>
       </div>
 </template>
 
 <script setup lang="ts">
 import CommentInput from '../components/CommentInput.vue'
 import Comment from '../components/Comment.vue'
+import Pin from '../components/Pin.vue'
+
 const images = ['angryChae.jpg', 'cuteChae.jpg', 'kawaiiChae.jpg', 'merongChae.jpg']
 const props = defineProps({
   idx: {
